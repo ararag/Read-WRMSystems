@@ -59,10 +59,21 @@ $dataResponse = Invoke-WebRequest -Uri $dataUri -Method GET -WebSession $session
 $data = $dataResponse.Content | ConvertFrom-Json
 
 Write-Host "`nWater Consumption Readings:"
+
+# Print header row
+$header = "{0,-20} {1,10} {2,8}" -f "Timestamp", "Total (m3)", "Delta (l)"
+Write-Host $header
+Write-Host ("-" * $header.Length)
+
+# Print readings
 foreach ($reading in $data) {
     $timestamp = $reading[0]
     $value = $reading[1]
     $delta = $reading[2]
-    Write-Host "$timestamp - Reading: $value - Delta: $delta"
+    $liters = [int]($delta * 1000)
+
+    $output = "{0,-20} {1,10} {2,8}" -f $timestamp, "$value", "$liters"
+    Write-Host $output
 }
+
 

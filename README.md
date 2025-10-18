@@ -1,7 +1,7 @@
 # Read-WRMSystems
 Powershell script to get water meter readings from WRM-Systems web interface.
 
-This script can be used to query water meter readings for customers of a water provider that offers their customers the https://wmd.wrm-system.fi web interface for accessing water meter readings online.
+This script can be used to query water meter readings for customers of a water provider that offers their customers the https://wmd.wrm-system.fi web interface for accessing water meter readings online.\
 Author: Dennis Nyholm
 
 # Instructions for use:
@@ -31,7 +31,7 @@ You need the following information in order to run this script:
      -Kuusamon energia- ja vesiosuuskunta: $baseUrl/kuusamonevo/login\
      -Vihtasillan vesihuolto-osuuskunta: $baseUrl/vsvho/login\
      -Pudasjärven Vesiosuuskunta: $baseUrl/pudasjarvenvesiosuuskunta/login\
-2) The E-mail and password to log on to the service. Put these in the $email and $password variables.\
+2) The E-mail and password to log on to the service. Put these in the $email and $password variables. If your provider uses customer number and water meter number, please refer to the note below.\
 3) The serial number of your water meter. This can be found on the front page once you have logged on to the service with a web browser.\
 
 # NOTE

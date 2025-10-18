@@ -5,7 +5,7 @@ $dataUrl = "$baseUrl/data/readings"
 
 
 # Define login credentials if using email:
-$email = "your.emailaddress@domain.com"
+$email = "email.address@domain.com"
 $password = "Password123"
 
 # Define customer number if not using email login:
@@ -75,5 +75,3 @@ foreach ($reading in $data) {
     $output = "{0,-20} {1,10} {2,8}" -f $timestamp, "$value", "$liters"
     Write-Host $output
 }
-
-

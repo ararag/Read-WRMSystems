@@ -62,6 +62,7 @@ Write-Host "`nWater Consumption Readings:"
 foreach ($reading in $data) {
     $timestamp = $reading[0]
     $value = $reading[1]
-    $status = $reading[2]
-    Write-Host "$timestamp - Value: $value - Status: $status"
+    $delta = $reading[2]
+    Write-Host "$timestamp - Reading: $value - Delta: $delta"
 }
+

@@ -1,8 +1,6 @@
 # Read-WRMSystems
-Powershell script to get water meter readings from WRM-Systems web interface.
-
-This script can be used to query water meter readings for customers of a water provider that offers their customers the https://wmd.wrm-system.fi web interface for accessing water meter readings online.\
-Author: Dennis Nyholm
+Powershell script to get water meter readings from WRM-Systems web interface.\
+This script can be used to query water meter readings for customers of a water provider that offers their customers the https://wmd.wrm-systems.fi web interface for accessing water meter readings online.\
 
 # Instructions for use:
 You need the following information in order to run this script:
